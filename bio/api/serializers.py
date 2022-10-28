@@ -6,4 +6,4 @@ from bio.models import Bio
 class BioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bio
-        fields = '__all__'
+        fields = ['slackUsername', 'backend', 'age', 'bio']
